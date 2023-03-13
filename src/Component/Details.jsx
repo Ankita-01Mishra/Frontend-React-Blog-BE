@@ -5,7 +5,7 @@ export const store = createContext()
 const Details = (props) => {
     const [details, setDetails] = useState([])
     useEffect(() => {
-        fetch('http://localhost:3001/')
+        fetch('https://backend-be2.onrender.com/')
         .then(response=>response.json())
         .then((response)=>setDetails(response))
         .catch(error=>console.error(error))   
